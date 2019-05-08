@@ -59,12 +59,12 @@ authors:
         bio: Software Developer
         external-image: false
         picture:
-        twitter: johndoe
+        twitter: 
     jamesfoster:
         name: James Foster
         bio: A Man who develops software with coffee
         external-image: false
-        picture: 
+        picture:
         twitter: jamesfoster
 
 # do you want a larger site? change the option below
