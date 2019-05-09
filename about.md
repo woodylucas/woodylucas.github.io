@@ -27,6 +27,6 @@ layout: page
 	<li><a href="https://github.com/woodylucas/shotchart-visulization">NBA Shotchart Visulization</a></li>
 	<li><a href="https://task-crello.herokuapp.com/">Crello App</a></li>
 	<li><a href="https://flatiron-ware-game.herokuapp.com/">Flatiron Ware Game</a></li>
-	<li><a href="http://woodylucas.github.io/Rock-Paper-Scissors/"></a>Rock Paper Scissors<li>
-	<li><a href="http://woodylucas.github.io/tictactoe/"></a>Tic Tac Toe<li>
+	<li><a href="http://woodylucas.github.io/Rock-Paper-Scissors/">Rock Paper Scissors</a></li>
+	<li><a href="http://woodylucas.github.io/tictactoe/">Tic Tac Toe</a></li>
 </ul>
