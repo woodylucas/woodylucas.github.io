@@ -18,7 +18,7 @@ layout: page
 	<li>Git</li>
 	<li>Python</li>
 	<li>MySQL - MongoDB</li>
-	<li>Ruby on Rails</li>i>
+	<li>Ruby on Rails</li>
 </ul>
 
 <h2>Projects</h2>
