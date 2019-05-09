@@ -1,8 +1,8 @@
 ---
-title: "Markdown Extra Components"
+title: "“Synchronous” fetching with async await"
 layout: post
-date: 2016-02-24 22:48
-image: /assets/images/markdown.jpg
+date: 2019-02-7 22:48
+image: 
 headerImage: false
 tag:
 - markdown
