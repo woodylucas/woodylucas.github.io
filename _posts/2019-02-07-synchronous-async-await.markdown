@@ -5,7 +5,7 @@ date: 2019-02-7 22:48
 image:
 headerImage: false
 tag:
-- JavaScript 
+- JavaScript
 - Async
 - Fetch
 category: blog
@@ -17,6 +17,8 @@ description: Markdown summary with different options
 JavaScript, the language we love, and hate to learn is a synchronous, blocking, single-threaded language. That just means that only one operation can be in progress at a time. This can be such a pain, because what if you want to perform so many task a one time? Many individuals, say hey this language is its opposite asynchronous, but its not. JavaScript can be manipulated to behave in a asynchronously way. Now what does that exactly mean? Well, an asynchronous operation is one that allows the computer to “move on” to other tasks while waiting for asynchronous operations to complete. Asynchronous programming means that time-consuming operations don’t have to bring everything else in our programs to a halt.
 
 Might be a bit confusing, but they’re many example of asynchronicity in our daily lifestyle. Let’s say you’re doing your daily house chores, are you just going to just do everything one by one? I mean you can, but lets say you are on time constraint. We use things such as dishwasher washing our dishes, or a washing machine washing our clothes. While we wait on the completion of those operations, so we’re free to do other chores.
+
+![Alt Text](https://media.giphy.com/media/EvNfyRC5HMVzi/giphy.gif){:height="50%" width="200%"}
 
 Similarly, web development makes use of asynchronous operations. Operations like making a network request or querying a database can be time-consuming, but JavaScript allows us to execute other tasks while awaiting their completion.
 
@@ -38,13 +40,46 @@ Promises are very eager, meaning that a promise will start doing whatever task y
 
 Its really highly recommended to understand promises to understand async. You can learn more here.
 
+
+![Async Await Diagram](/assets/images/async-diagram.png)
+
 Await
 
 As a developer, we will more than likely make a request to APIs a lot. When I first started using fetch, I used it the traditional way(presented below). Async/Await really really goes into solving one of the biggest pains in the language since its beginning: asynchrony. If you do not understand the concept of asynchronous code, I suggest you to read about that first before you keep reading this article.
 
+```javascript
+
+
+fetch('https://api.com/values/1')
+    .then(response => response.json())
+    .then(json => console.log(json));
+
+```
+
 What if I said there’s a special type of syntax that you can work with promises, in a more comfortable fashion. This is called async await.
 
+```javaScript
+
+const response = fetch('https://api.com/values/1');
+const json = response.json();
+console.log(json);
+
+
+```
+
+
 But wait, this won’t work. This is normally impossible to do. Now, what if I tell you, you can just insert is a keyword name await.
+
+![Alt Text](https://media.giphy.com/media/vjyl3YVgcLiWA/giphy.gif){:height="50%" width="200%"}
+
+```javascript
+
+const response = await fetch('https://api.com/values/1');
+const json = await response.json();
+console.log(json);
+ 
+
+```
 
 1st line of code
 
