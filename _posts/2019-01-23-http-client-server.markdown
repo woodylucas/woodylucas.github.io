@@ -49,7 +49,7 @@ HTTP Request Methods
 
 The heart of REST.
 
-![HTTP Diagram](/assets/images/http-diagram.png)
+![HTTP Diagram](/assets/images/http-diagram.jpg)
 
 When a computer is simply fetching data, it usually sends an HTTP message called a GET request, and when it’s sending form data or uploading a file it uses other formats of messages called PUT or POST requests. You can see the HTTP messages your web browser is sending in many browsers through the built-in developer tools.
 
