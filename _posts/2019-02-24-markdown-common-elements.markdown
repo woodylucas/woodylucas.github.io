@@ -1,15 +1,16 @@
 ---
-title: "Markdown Common Elements"
+title: "The Tap Method"
 layout: post
-date: 2016-02-24 22:44
-image: /assets/images/markdown.jpg
+date: 2019-01-11 22:44
+image:
 headerImage: false
 tag:
-- markdown
-- elements
+- ruby
+- rails
+- chaining
 star: true
 category: blog
-author: johndoe
+author: woodylucas
 description: Markdown summary with different options
 ---
 
