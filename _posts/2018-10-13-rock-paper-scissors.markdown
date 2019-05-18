@@ -13,7 +13,7 @@ author: woodylucas
 externalLink: false
 ---
 
-![Screenshot](/assets/images/nba-visualization-shot-chart.png)
+![Screenshot](/assets/images/rock-paper-scissors.png)
 
 Example of project - Rock Paper Scissors - [Demo](https://woodylucas.github.io/Rock-Paper-Scissors/).
 
