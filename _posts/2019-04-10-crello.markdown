@@ -1,0 +1,28 @@
+---
+title: "Crello"
+layout: post
+date: 2019-04-10 22:10
+tag: React/JavaScript
+image:
+headerImage: true
+projects: true
+hidden: true # don't count this post in blog pagination
+description: "This is a task management game, gives the user the ability to drag and drop."
+category: project
+author: woodylucas
+externalLink: false
+---
+
+![Screenshot](/assets/images/crello.png)
+
+Example of project - Flatiron Ware Game - [Demo](https://task-crello.herokuapp.com/).
+---
+
+What has inside?
+
+- Drag & Drop
+- React
+- JavaScript
+- Redux
+
+---
