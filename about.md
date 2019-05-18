@@ -2,7 +2,7 @@
 title: About
 layout: page
 ---
-![Profile Image]({{ site.url }}/{{ site.picture }})
+![Profile Image](https://woodylucas.github.io/assets/images/profile-pic.jpg)
 
 <p>Hi, I'm Woody Lucas, a Software Developer. I am passionate and very relentless when it comes to building excellent software. I enjoy turning a complex problem into a pragmatic solution that isn't a quick fix, but has a lasting value. My mission-driven work ethic gives me the ability to change the world, and improve the lives around me.</p>
 
