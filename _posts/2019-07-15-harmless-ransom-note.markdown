@@ -66,15 +66,15 @@ function harmlessRansomNote(noteText, magazineText {
 The goal of this is to have every word that is present be presented like this {this: 1}. This will just show how many times this word is present in that array of words. Back to coding…
 
 ```javascript
+ const magazineObj = {}; // hash table. The goal is to keep track of every specific word. Should look like this { this: 1 }
 
-magazineArr.forEach(word => {
-if(!magazineObj[word]){ // if the word isn't present, then set magazineObj equal to zero. The reason being we're stating it doesn't exist.
-magazineObj[word] = 0;
-}
-magazineObj[word]++;
-// then add the word to the hash table.
-});
-
+ magazineArr.forEach(word => {
+   if(!magazineObj[word]){ // if the word isn't present, then set magazineObj equal to zero. The reason being we're stating it doesn't exist.
+     magazineObj[word] = 0;
+   }
+   magazineObj[word]++;
+   // then add the word to the hash table.
+ });
 ```
 
 We iterate through the magazine array, to see if the word exist. See how we are using the variable magazineObj (which is our hash table). To keep track of every string placed in that array. So if the word isn’t present in the magazineObj, then set magazineObj = 0. This is just saying the word is not present, so when we add a word it will start at zero, and we will increment up. So now if we place a new word in the string it will count how many times its present.
@@ -82,17 +82,19 @@ We iterate through the magazine array, to see if the word exist. See how we are 
 ```javascript
 
 let noteIsPossible = true;
-notesArr.forEach( word => {
-if(magazineObj[word]) { // if the word is present in the object, we are going to remove that word to avoid duplicates.
-magazineObj[word]--;
-if (magazineObj[word] < 0)  { // less than zero, then set noteIsPossible to false because it doesn't exist.
-noteIsPossible = false;
-}
-} else {
-noteIsPossible = false; // if we don't have all the necessary words possbile. We will mark it false.
-}
-})
-return noteIsPossible;
+
+  notesArr.forEach( word => {
+    if(magazineObj[word]) { // if the word is present in the object, we are going to remove that word to avoid duplicates.
+      magazineObj[word]--;
+      if (magazineObj[word] < 0)  { // less than zero, then set noteIsPossible to false because it doesn't exist.
+        noteIsPossible = false;
+      }
+
+    } else {
+      noteIsPossible = false; // if we don't have all the necessary words possbile. We will mark it false.
+    }
+  })
+  return noteIsPossible;
 }
 
 
@@ -106,7 +108,7 @@ Solution:
 
 ```javascript
 
-unction harmlessRansomNote(note, magazine) {
+function harmlessRansomNote(note, magazine) {
   const notesArr = note.split(' '); // creates an array.
   const magazineArr = magazine.split(' ');
   const magazineObj = {}; // hash table. The goal is to keep track of every specific word. Should look like this { this: 1 }
