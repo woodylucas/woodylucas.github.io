@@ -15,7 +15,7 @@ externalLink: false
 
 ![Screenshot](/assets/images/crello.png)
 
-Example of project - Flatiron Ware Game - [Demo](https://task-crello.herokuapp.com/).
+Example of project - Crello - [Demo](https://task-crello.herokuapp.com/).
 ---
 
 What has inside?
