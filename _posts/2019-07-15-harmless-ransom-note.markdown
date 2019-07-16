@@ -107,29 +107,29 @@ Solution:
 ```javascript
 
 function harmlessRansomNote(note, magazine) {
-const notesArr = note.split(' '); // creates an array.
-const magazineArr = magazine.split(' ');
-const magazineObj = {}; // hash table. The goal is to keep track of every specific word. Should look like this { this: 1 }
-magazineArr.forEach(word => {
-if(!magazineObj[word]){ // if the word isn't present, then set magazineObj equal to zero. The reason being we're stating it doesn't exist.
-magazineObj[word] = 0;
-}
-magazineObj[word]++;
+  const notesArr = note.split(' '); // creates an array.
+  const magazineArr = magazine.split(' ');
+  const magazineObj = {}; // hash table. The goal is to keep track of every specific word. Should look like this { this: 1 }
+  magazineArr.forEach(word => {
+    if(!magazineObj[word]){ // if the word isn't present, then set magazineObj equal to zero. The reason being we're stating it doesn't exist.
+    magazineObj[word] = 0;
+  }
+  magazineObj[word]++;
 // then add the word to the hash table.
-});
+  });
 let noteIsPossible = true;
 notesArr.forEach( word => {
-if(magazineObj[word]) { // if the word is present in the object, we are going to remove that word to avoid duplicates.
-magazineObj[word]--;
-if (magazineObj[word] < 0)  { // less than zero, then set noteIsPossible to false because it doesn't exist.
-noteIsPossible = false;
-}
-} else {
-noteIsPossible = false; // if we don't have all the necessary words possbile. We will mark it false.
-}
-})
-return noteIsPossible;
-}
+  if(magazineObj[word]) { // if the word is present in the object, we are going to remove that word to avoid duplicates.
+    magazineObj[word]--;
+    if (magazineObj[word] < 0)  { // less than zero, then set noteIsPossible to false because it doesn't exist.
+    noteIsPossible = false;
+  }
+  } else {
+    noteIsPossible = false; // if we don't have all the necessary words possbile. We will mark it false.
+  }
+  })
+  return noteIsPossible;
+  }
 harmlessRansomNote('this is a secret note for you from a secret admirer', 'puerto rico is a place of great wonder and excitement it has many secret waterfall locations that i am an admirer of you must hike quite a distance to find the secret places as they are far from populated areas but it is worth the effort a tip i have for you is to go early in the morning when it is not so hot out also note that you must wear hiking boots this is one of the best places i have ever visited');
 
 ```
